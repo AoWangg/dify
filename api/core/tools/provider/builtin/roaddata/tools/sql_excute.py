@@ -1,8 +1,10 @@
-import psycopg2
 from typing import Any, Union
+
+import psycopg2
 
 from core.tools.entities.tool_entities import ToolInvokeMessage
 from core.tools.tool.builtin_tool import BuiltinTool
+
 
 class ExecuteSQLTool(BuiltinTool):
     def _invoke(
