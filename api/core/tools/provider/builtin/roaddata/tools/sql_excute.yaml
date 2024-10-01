@@ -1,0 +1,85 @@
+identity:
+  name: sql_excute
+  author: AoWang
+  label:
+    en_US: sql_excute
+    zh_Hans: sql_excute
+    pt_BR: sql_excute
+description:
+  human:
+    en_US: 连接数据库并执行sql语句
+    zh_Hans: 连接数据库并执行sql语句
+    pt_BR: 连接数据库并执行sql语句
+  llm: 连接数据库并执行sql语句
+parameters:
+  - name: dbname
+    type: string
+    required: true
+    label:
+      en_US: Database Name
+      zh_Hans: 数据库名称
+    human_description:
+      en_US: The name of the PostgreSQL database to connect to.
+      zh_Hans: 需要连接的PostgreSQL数据库名称。
+    llm_description: Name of the PostgreSQL database.
+    form: llm
+
+  - name: user
+    type: string
+    required: true
+    label:
+      en_US: Username
+      zh_Hans: 用户名
+    human_description:
+      en_US: The username used to connect to the PostgreSQL database.
+      zh_Hans: 连接PostgreSQL数据库的用户名。
+    llm_description: Username for the PostgreSQL database.
+    form: llm
+
+  - name: password
+    type: string
+    required: true
+    label:
+      en_US: Password
+      zh_Hans: 密码
+    human_description:
+      en_US: The password used to connect to the PostgreSQL database.
+      zh_Hans: 连接PostgreSQL数据库的密码。
+    llm_description: Password for the PostgreSQL database.
+    form: llm
+
+  - name: host
+    type: string
+    required: false
+    label:
+      en_US: Host
+      zh_Hans: 主机
+    human_description:
+      en_US: The host address of the PostgreSQL database 
+      zh_Hans: PostgreSQL数据库的主机地址。
+    llm_description: Host address for the PostgreSQL database.
+    form: llm
+
+  - name: port
+    type: string
+    required: false
+    label:
+      en_US: Port
+      zh_Hans: 端口
+    human_description:
+      en_US: The port number of the PostgreSQL database.
+      zh_Hans: PostgreSQL数据库的端口号。
+    llm_description: Port number for the PostgreSQL database.
+    form: llm
+
+  - name: sql_query
+    type: string
+    required: true
+    label:
+      en_US: SQL Query
+      zh_Hans: SQL查询语句
+    human_description:
+      en_US: The SQL query to execute.
+      zh_Hans: 要执行的SQL查询。
+    llm_description: SQL query to execute.
+    form: llm

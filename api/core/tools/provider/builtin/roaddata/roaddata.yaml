@@ -1,0 +1,15 @@
+identity:
+  author: roaddata
+  name: roaddata
+  label:
+    en_US: roaddata
+    zh_Hans: roaddata
+    pt_BR: roaddata
+  description:
+    en_US: roaddata
+    zh_Hans: roaddata
+    pt_BR: roaddata
+  icon: icon.svg
+  tags:
+    - utilities
+    - productivity
