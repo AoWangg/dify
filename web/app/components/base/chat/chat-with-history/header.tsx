@@ -17,7 +17,7 @@ const Header: FC<HeaderProps> = ({
       ${isMobile && '!h-12'}
       `}
     >
-      {title}
+      {'聊天内容'}
     </div>
   )
 }

@@ -85,7 +85,7 @@ const Sidebar = () => {
           onClick={handleNewConversation}
         >
           <Edit05 className='mr-2 w-4 h-4' />
-          {t('share.chat.newChat')}
+          {t('开启新查询')}
         </Button>
       </div>
       <div className='grow px-4 py-2 overflow-y-auto'>
